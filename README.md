@@ -548,7 +548,7 @@ if __name__ == '__main__':
 python3 weibo_top_sentiment_SVM_bayes.py
 ```
 
-![模型训练](img/屏幕截图%2023-11-06%145407.png)
+![模型训练]([img/屏幕截图%2023-11-06%145407.png](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-06%20145407.png))
 
 
 支持向量机模型的精确率稍微好一些
