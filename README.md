@@ -559,15 +559,15 @@ python3 weibo_top_sentiment_SVM_bayes.py
 python3 weibo_top_producer.py
 ```
 
-![生产者启动1](img/屏幕截图2023-11-094012.png)
+![生产者启动1](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094012.png)
 
-![生产者启动2](img/屏幕截图2023-11-094123.png)
+![生产者启动2](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094123.png)
 
-![生产者启动3](img/屏幕截图2023-11-094142.png)
+![生产者启动3](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094142.png)
 
-![生产者启动4](img/屏幕截图2023-11-094203.png)
+![生产者启动4](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094203.png)
 
-![生产者启动5](img/屏幕截图2023-11-094224.png)
+![生产者启动5](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094224.png)
 
 ### 3.消费者启动
 
@@ -575,13 +575,13 @@ python3 weibo_top_producer.py
 spark-submit --packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 weibo_top_consumer.py 192.168.128.131:9092,192.168.128.132:9092,192.168.128.133:9092 subscribe weibotop
 ```
 
-![消费者启动1](img/屏幕截图2023-11-094153.png)
+![消费者启动1](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094153.png)
 
-![消费者启动2](img/屏幕截图2023-11-094256.png)
+![消费者启动2](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094256.png)
 
 已经生成了新的csv文件
 
-![生成](img/屏幕截图2023-11-07094736.png)
+![生成](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20094736.png)
 
 ### 4.flask服务器启动
 
@@ -591,23 +591,23 @@ python3 weibo_top_visual_pyecharts.py
 
 首页
 
-![首页](img/屏幕截图2023-11-07095640.png)
+![首页](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20095640.png)
 
 情感分值柱状图
 
-![情感分值柱状图](img/屏幕截图2023-11-07095652.png)
+![情感分值柱状图](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20095652.png)
 
 缩放进度条放大后的
 
-![情感分值柱状图1](img/屏幕截图2023-11-07095713.png)
+![情感分值柱状图1](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20095713.png)
 
-![情感分值柱状图2](img/屏幕截图2023-11-07095729.png)
+![情感分值柱状图2](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20095729.png)
 
-![情感分值柱状图3](img/屏幕截图2023-11-07095742.png)
+![情感分值柱状图3](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20095742.png)
 
 情绪占比图
 
-![情感分值柱状图3](img/屏幕截图2023-11-07095759.png)
+![情感分值柱状图3](https://github.com/FreakKJ/EmotionAnalysisForWeibo/blob/main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-07%20095759.png)
 
 
 
