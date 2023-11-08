@@ -1,0 +1,26 @@
+zookeeper是脚本命令启动
+
+zookeeper集群启动命令
+zk.sh start
+kafka broker服务器启动命令
+/opt/module/kafka/bin/kafka-server-start.sh /opt/module/kafka/config/server.properties
+
+zookeeper集群关闭命令
+zk.sh stop
+kafka broker服务器关闭命令
+/opt/module/kafka/bin/kafka-server-stop.sh /opt/module/kafka/config/server.properties
+
+创建weibotop主题
+/opt/module/kafka/bin/kafka-topics.sh --create --bootstrap-server 192.168.128.131:9092,192.168.128.132:9092,192.168.128.133:9092 --replication-factor 3 --partitions 1 --topic weibotop
+
+查看kafka创建的主题
+/opt/module/kafka/bin/kafka-topics.sh --list --bootstrap-server 192.168.128.131:9092,192.168.128.132:9092,192.168.128.133:9092
+
+生产者启动
+python3 weibo_top_producer.py
+
+用pyspark提交启动consumer
+spark-submit --packages org.apache.spark:spark-streaming-kafka-0-10_2.12:3.0.1,org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 weibo_top_consumer.py 192.168.128.131:9092,192.168.128.132:9092,192.168.128.133:9092 subscribe weibotop
+
+flask服务器启动
+python3 weibo_top_visual_pyecharts.py
